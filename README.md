@@ -8,7 +8,7 @@ This Dockerfile builds an AlmaLinux 8 based container, capable of using `systemd
 2. Clone the repository: 
 
    ```shell
-   git clone https://github.com/chzerv/almalinux8-systemd-ansible.git
+   git clone https://github.com/wfelipew/almalinux8-systemd-ansible.git
    ```
 3. `cd` into the directory and run `docker build -t almalinux8-systemd-ansible .`
 
@@ -21,7 +21,7 @@ This Dockerfile builds an AlmaLinux 8 based container, capable of using `systemd
 2. Pull this image from _Docker hub_:
 
     ```shell
-    docker pull chzerv/almalinux8-systemd-ansible:latest
+    docker pull wfelipew/almalinux8-systemd-ansible:latest
     ```
 > If you built the image locally, you can use that instead.
 
