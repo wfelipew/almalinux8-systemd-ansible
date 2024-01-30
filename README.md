@@ -1,6 +1,6 @@
 # AlmaLinux 8 Container Image for Ansible Testing
 
-This Dockerfile builds an AlmaLinux 8 based container, capable of using `systemd`, mainly for Ansible role testing.
+This Dockerfile builds an AlmaLinux 8.9 based container, capable of using `systemd`, mainly for Ansible role testing.
 
 # How to build locally
 
