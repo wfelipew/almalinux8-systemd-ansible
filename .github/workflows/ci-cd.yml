@@ -24,9 +24,12 @@ jobs:
 
       - name: Build the image.
         run: docker build -t almalinux8-systemd-ansible .
+      
+      # - name: Setup tmate session
+      #   uses: mxschmitt/action-tmate@v3
 
       - name: Create a container from the built image.
-        run: docker run --name instance -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro almalinux8-systemd-ansible
+        run: docker run --name instance -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw -v /var/lib/containerd --cgroupns host almalinux8-systemd-ansible
 
       - name: Verify systemd is working.
         run: docker exec --tty instance systemctl list-unit-files --no-pager
